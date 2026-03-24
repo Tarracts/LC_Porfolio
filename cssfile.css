@@ -70,37 +70,9 @@ padding: 0;
 }
 
 .links:hover {
-    color: orange;
+    color:  rgb(48, 155, 226);
     transform: scale(1, 1);
 }
-
-
-
-
-
-/* Hero Section Styles */
-.hero-section {
-    position: relative;
-    height: 90vh;
-    overflow: hidden;
-    background-image: url(/STRATEGIST-ADVISORY/img-stock/cubes-2492010_1280.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 8%;
-}
-
-.hero-content {
-    display: flex;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #000000a1;
-    padding: 20px;
-    padding-left: 80px;
-    width: fit-content;
-}
-
-
 
 
 /* A Propos Section Styles */
@@ -121,7 +93,7 @@ padding: 0;
     display: block;
     width: 60px;
     height: 4px;
-    background: orange;
+    background:  black;
     margin-top: 10px;
     border-radius: 2px;
 }
@@ -162,7 +134,7 @@ padding: 0;
     content: "✓";
     position: absolute;
     left: 0;
-    color: orange;
+    color:  rgb(48, 155, 226);
     font-weight: bold;
 }
 
@@ -397,7 +369,7 @@ textarea {
     padding: 14px;
     border-radius: 10px;
     border: none;
-    background: orange;
+    background:  rgb(48, 155, 226);
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -451,7 +423,7 @@ footer {
 
 .footer-hero h4 {
     font-size: 20px;
-    color: orange;
+    color:  rgb(48, 155, 226);
 }
 
 .footer-hero h2 {
@@ -462,7 +434,7 @@ footer {
 }
 
 .footer-hero button {
-    background-color: orange;
+    background-color:  rgb(48, 155, 226);
     color: white;
     border: none;
     padding: 10px 20px;

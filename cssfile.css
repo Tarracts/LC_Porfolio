@@ -38,7 +38,7 @@ padding: 0;
     padding-left: 1%;
     padding-right: 1%;
     height: 100vh;
-    width: 40%;
+    width: 35%;
     gap: 40px;
     text-align: start;
     font-weight: bold;
@@ -49,10 +49,6 @@ padding: 0;
 }
 .sidebar a{
     font-size: 22px;
-}
-.logo {
-    text-decoration: none;
-    margin: 0 15px;
 }
 
 .links {
@@ -99,9 +95,9 @@ padding: 0;
 }
 
 .a-propos-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 40px;
+    width: 70%;
 }
 
 @media (max-width: 768px) {
@@ -139,113 +135,29 @@ padding: 0;
 }
 
 
-/* Services Section Styles */
-.services-section {
+/* Parcour Section Styles */
+.Parcour-section {
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f8f9fb;
 }
-
-.services-container {
-    justify-content: center;
-}
-
-.services-box {
-    justify-content: space-evenly;
-}
-
-.services-card.border {
-    padding-top: 15px;
-    display: flex;
-    border-radius: 10px;
-}
-
-.services-card img {
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-}
-
-/* valeur Section Styles */
-.valeur-section {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #f8f9fb;
-}
-
-.valeur-container {
-    justify-content: space-evenly;
-    display: flex;
-}
-
-.valeurs-card {
+.Parcour-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    padding: 30px;
+    margin-bottom: 30px;
     gap: 20px;
-    border-radius: 10px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 16px;
 }
-
-.valeurs-card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
+.Parcour-card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 20px;
 }
-
-
-/* Articles Section Styles */
-.articles-section {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #f8f9fb;
-}
-
-.articles-container {
-    padding: 50px 20px;
-    justify-content: space-evenly;
-    display: flex;
-    gap: 20px;
-}
-
-.article-card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-
-}
-
-.article-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-bottom: 15px;
-    background-color: #f8f9fb;
-}
-
-.article-card h3,
-.article-card p {
-    margin: 0px 15px;
-    margin-bottom: 10px;
-}
-
-.voir-plus {
-    margin-top: auto;
-    padding: 0 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    color: rgba(0, 0, 255, 0.658);
-}
-
-
-
 
 /* Contact Styles */
-.Recrutement-section {
+.contact-section {
     padding: 80px 0;
     background: #f8f9fb;
     padding-left: 5%;
@@ -378,7 +290,7 @@ textarea {
 }
 
 .btn-submit:hover {
-    background: #e69500;
+    background:  rgb(13, 110, 253);
     transform: translateY(-2px);
 }
 
@@ -396,79 +308,79 @@ textarea {
     border-radius: 10px;
 }
 
-
-
-
-
-/* Footer Styles */
-footer {
-    background-color: #000000;
-    padding: 20px 0;
-}
-
-.footer-container {
-    padding: 30px 0;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-hero {
+/* Competences Section Styles */
+.competences-section {
     padding-left: 5%;
-
-}
-
-.footer-hero h4 {
-    font-size: 20px;
-    color:  rgb(48, 155, 226);
-}
-
-.footer-hero h2 {
-    font-size: 37px;
-    margin: 10px 0;
-    width: 80%;
-    color: white;
-}
-
-.footer-hero button {
-    background-color:  rgb(48, 155, 226);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 40px;
-    margin-right: 5%;
-}
-
-.footer-links a {
-    display: flex;
-    color: white;
-    flex-direction: column;
-    gap: 60px;
     padding-right: 5%;
-    font-size: 15px;
-    text-decoration: none;
+    background-color: #f8f9fb;
 }
-
-
-footer p {
+.competences-grid {
     padding-left: 5%;
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 0%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
-.wip{
-    justify-content: center;
-    height: 80vh;
+
+.competence-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.competence-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.competence-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Projets Section Styles */
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.projet-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projet-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projet-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.projet-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }

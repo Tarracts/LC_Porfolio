@@ -308,6 +308,41 @@ textarea {
     border-radius: 10px;
 }
 
+/* Certifications Section Styles */
+.certification-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f8f9fb;
+}
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.certif-box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certif-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certif-logo {
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+
 /* Competences Section Styles */
 .competences-section {
     padding-left: 5%;
@@ -344,10 +379,17 @@ textarea {
 }
 
 /* Projets Section Styles */
+.projets-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f8f9fb;
+}
 .projets-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .projet-box {

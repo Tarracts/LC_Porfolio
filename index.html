@@ -14,14 +14,20 @@
 
 <body>
     <div class="body-container">
-        <header class="sidebar">
-            <img src="" alt="photo de profil">
-            <a href="index.html" class="links" style="color: rgb(48, 155, 226);">Accueil</a>
-            <a href="#A-Propos" class="links">A Propos</a>
-            <a href="#Parcours" class="links">Parcours</a>
-            <a href="#Projet" class="links">Projet</a>
-            <a href="#Veille" class="links">Veille</a>
-            <a href="#Contact" class="links">Contact</a>
+        <header class="sidebar d-flex flex-column align-items-center p-3">
+
+            <img src="imgs/IMG_8177.jpeg" class="pdp mb-4" alt="photo de profil">
+
+            <nav class="nav flex-column text-center w-100">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="#A-Propos" class="nav-link">À propos</a>
+                <a href="#Parcours" class="nav-link">Parcours</a>
+                <a href="#Projet" class="nav-link">Projets</a>
+                <a href="#Veille" class="nav-link">Veille</a>
+                <a href="#Contact" class="nav-link">Contact</a>
+                <a href="imgs/Tableau de synthèse.pdf" class="nav-link">Tableau de synthèse</a>
+            </nav>
+
         </header>
 
 
@@ -33,24 +39,24 @@
                     <div class="a-propos-content">
                         <div class="a-propos-texts">
                             <p class="a-propos-text">
-                                Je me présente je m'appelle Ludovic Cheng
+                                Je me présente, je m'appelle Ludovic Cheng
                                 <br><br>
                                 Je suis un étudiant de 19 ans en fin de BTS SIO (Services Informatiques aux
-                                Organisations)
-                                option SLAM (Solutions Logicielles et Application Métier) qui est une formation
-                                spécialisée
-                                dans
-                                le développement
+                                Organisations), option SLAM (Solutions Logicielles et Application Métier),
+                                spécialisée dans le développement.
                             </p>
                             <p class="a-propos-text">
-                                Toujours en cours d'étude je vous présente ci-dessous mon portfolio ou vous retrouverez
-                                mes
-                                projets académique mais aussi professionnel que j'ai pus réaliser au cours de mes études
-                                et
-                                ma
-                                carrière professionel.
+                                Toujours en cours d'étude, je vous présente ci-dessous mon portfolio où vous retrouverez
+                                mes projets académiques et professionnels réalisés au cours de mes études et de ma
+                                carrière.
                                 <br><br>
-                                Vous retrouvez ci-joint mon CV
+
+                                Vous trouverez ci-joint mon CV :
+                                <br><br>
+
+                                <a href="imgs/CV.pdf" target="_blank" class="btn btn-primary">
+                                    Voir mon CV (PDF)
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -109,20 +115,36 @@
 
                 <div class="competences-grid" data-aos="fade-up" data-aos-once="true">
                     <div class="competence-box">
-                        <img src="imgs/html-logo.png" alt="HTML Logo" class="competence-logo">
+                        <img src="imgs/html-5.png" alt="HTML Logo" class="competence-logo">
                         <p>HTML</p>
                     </div>
                     <div class="competence-box">
-                        <img src="imgs/css-logo.png" alt="CSS Logo" class="competence-logo">
+                        <img src="imgs/css-3.png" alt="CSS Logo" class="competence-logo">
                         <p>CSS</p>
                     </div>
                     <div class="competence-box">
-                        <img src="imgs/js-logo.png" alt="JavaScript Logo" class="competence-logo">
+                        <img src="imgs/JavaScript.png" alt="JavaScript Logo" class="competence-logo">
                         <p>JavaScript</p>
                     </div>
                     <div class="competence-box">
-                        <img src="imgs/python-logo.png" alt="Python Logo" class="competence-logo">
-                        <p>Python</p>
+                        <img src="imgs/java.png" alt="Java Logo" class="competence-logo">
+                        <p>Java</p>
+                    </div>
+                    <div class="competence-box">
+                        <img src="imgs/mysql.png" alt="MySQL Logo" class="competence-logo">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="competence-box">
+                        <img src="imgs/php.png" alt="PHP Logo" class="competence-logo">
+                        <p>PHP</p>
+                    </div>
+                    <div class="competence-box">
+                        <img src="imgs/nodejs.png" alt="Node.js Logo" class="competence-logo">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="competence-box">
+                        <img src="imgs/vue-js.png" alt="Vue.js Logo" class="competence-logo">
+                        <p>Vue.js</p>
                     </div>
                 </div>
             </section>
@@ -151,12 +173,12 @@
                         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                             <!-- Indicators/dots -->
-                            <div class="carousel-indicators">
+                            <div class="carousel-indicators bg-dark ">
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
                                     class="active"></button>
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
                             </div>
 
                             <!-- The slideshow/carousel -->
@@ -176,11 +198,11 @@
                             </div>
 
                             <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                            <button class="carousel-control-prev bg-secondary" type="button" data-bs-target="#demo"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                            <button class="carousel-control-next bg-secondary" type="button" data-bs-target="#demo"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                             </button>
